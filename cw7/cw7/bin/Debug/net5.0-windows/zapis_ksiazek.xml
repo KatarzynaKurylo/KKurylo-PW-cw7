@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfWiersz_ksiazki xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Wiersz_ksiazki>
+    <Id>1</Id>
+    <Tytul>Zielona mila</Tytul>
+    <Autor>King</Autor>
+    <Wypozyczona>nie</Wypozyczona>
+  </Wiersz_ksiazki>
+  <Wiersz_ksiazki>
+    <Id>2</Id>
+    <Tytul>Wszystko za życie</Tytul>
+    <Autor>Krakauer</Autor>
+    <Wypozyczona>nie</Wypozyczona>
+  </Wiersz_ksiazki>
+  <Wiersz_ksiazki>
+    <Id>3</Id>
+    <Tytul>Kazdego dnia</Tytul>
+    <Autor>Levithan</Autor>
+    <Wypozyczona>nie</Wypozyczona>
+  </Wiersz_ksiazki>
+  <Wiersz_ksiazki>
+    <Id>4</Id>
+    <Tytul>Alchemik</Tytul>
+    <Autor>Coelho</Autor>
+    <Wypozyczona>nie</Wypozyczona>
+  </Wiersz_ksiazki>
+</ArrayOfWiersz_ksiazki>

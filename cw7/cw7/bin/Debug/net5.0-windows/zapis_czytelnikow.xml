@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfWiersz xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Wiersz>
+    <Id>1</Id>
+    <Imie>Jan</Imie>
+    <Nazwisko>Kowalski</Nazwisko>
+  </Wiersz>
+  <Wiersz>
+    <Id>2</Id>
+    <Imie>Kamil</Imie>
+    <Nazwisko>Nowak</Nazwisko>
+  </Wiersz>
+  <Wiersz>
+    <Id>3</Id>
+    <Imie>Kasia</Imie>
+    <Nazwisko>Szymborska</Nazwisko>
+  </Wiersz>
+  <Wiersz>
+    <Id>4</Id>
+    <Imie>Joanna</Imie>
+    <Nazwisko>Wiśniewska</Nazwisko>
+  </Wiersz>
+</ArrayOfWiersz>

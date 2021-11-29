@@ -1,0 +1,16 @@
+﻿<Window x:Class="cw7.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cw7"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Label Content="Imie" HorizontalAlignment="Left" Margin="118,193,0,0" VerticalAlignment="Top" Height="39" Width="70"/>
+        <Label Content="Nazwisko" HorizontalAlignment="Left" Margin="358,198,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Imie" HorizontalAlignment="Left" Margin="118,253,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="29" TextChanged="Imie_TextChanged_1"/>
+        <TextBox x:Name="Nazwisko" HorizontalAlignment="Left" Margin="358,253,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="29" TextChanged="Nazwisko_TextChanged_1"/>
+        <Button x:Name="Add" Content="Add" HorizontalAlignment="Left" Margin="576,328,0,0" VerticalAlignment="Top" Height="48" Width="141" Click="Add_Click"/>
+    </Grid>
+</Window>
