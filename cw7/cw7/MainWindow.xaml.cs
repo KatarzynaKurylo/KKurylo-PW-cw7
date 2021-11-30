@@ -115,8 +115,8 @@ namespace cw7
             Window2 okno = new Window2();
             okno.ShowDialog();
             id = lista_ksiazek.Count() + 1;
-            Ksiazki.Items.Add(new Wiersz_ksiazki(Window2.text3, id, Window2.text4, "nie"));
-            lista_ksiazek.Add(new Wiersz_ksiazki(Window2.text3, id, Window2.text4, "nie"));
+            Ksiazki.Items.Add(new Wiersz_ksiazki(Window2.text3, id, Window2.text4, "--"));
+            lista_ksiazek.Add(new Wiersz_ksiazki(Window2.text3, id, Window2.text4, "--"));
         }
         private void ListView_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
@@ -124,11 +124,16 @@ namespace cw7
         }
         private void Wypozycz_Click(object sender, RoutedEventArgs e)
         {
+            var id_czytelnika = Czytelnicy.SelectedItem as Wiersz;
             var item = Ksiazki.SelectedItem as Wiersz_ksiazki;
             int i;
             i = item.Id - 1;
-            Ksiazki.Items[i] = new Wiersz_ksiazki(item.Tytul, item.Id, item.Autor, "tak");
-            lista_ksiazek[i] = new Wiersz_ksiazki(item.Tytul, item.Id, item.Autor, "tak");
+            if (item.Wypozyczona == "--")
+            {
+                item.Wypozyczona = id_czytelnika.Id.ToString();
+                Ksiazki.Items[i] = new Wiersz_ksiazki(item.Tytul, item.Id, item.Autor, item.Wypozyczona);
+                lista_ksiazek[i] = new Wiersz_ksiazki(item.Tytul, item.Id, item.Autor, item.Wypozyczona);
+            }
         }
 
         private void Oddaj_Click(object sender, RoutedEventArgs e)
@@ -136,8 +141,8 @@ namespace cw7
             var item = Ksiazki.SelectedItem as Wiersz_ksiazki;
             int i;
             i = item.Id - 1;
-            Ksiazki.Items[i] = new Wiersz_ksiazki(item.Tytul, item.Id, item.Autor, "nie");
-            lista_ksiazek[i] = new Wiersz_ksiazki(item.Tytul, item.Id, item.Autor, "nie");
+            Ksiazki.Items[i] = new Wiersz_ksiazki(item.Tytul, item.Id, item.Autor, "--");
+            lista_ksiazek[i] = new Wiersz_ksiazki(item.Tytul, item.Id, item.Autor, "--");
         }
         protected override void OnClosing(CancelEventArgs e)
         {

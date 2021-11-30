@@ -10,26 +10,27 @@
         <ListView x:Name="Czytelnicy" Margin="10,54,529,140" SelectionChanged="ListView_SelectionChanged_1">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn DisplayMemberBinding="{Binding Imie}" Width="80" Header="Imie"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Nazwisko}" Width="80" Header="Nazwisko"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Id}" Width="80" Header="Id"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Imie}" Width="100" Header="Imie"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Nazwisko}" Width="100" Header="Nazwisko"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Id}" Width="40" Header="Id"/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <ListView x:Name="Ksiazki" Margin="429,54,10,140" SelectionChanged="ListView_SelectionChanged_1">
+        <ListView x:Name="Ksiazki" Margin="434,54,10,140" SelectionChanged="ListView_SelectionChanged_1">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn DisplayMemberBinding="{Binding Tytul}" Width="80" Header="Tytul"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Autor}" Width="80" Header="Autor"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Id}" Width="80" Header="Id"/>
-                    <GridViewColumn DisplayMemberBinding="{Binding Wypozyczona}" Width="80" Header="Wypozyczona"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Tytul}" Width="100" Header="Tytul"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Autor}" Width="100" Header="Autor"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Id}" Width="50" Header="Id"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Wypozyczona}" Width="90" Header="Wypozyczona"/>
                 </GridView>
             </ListView.View>
         </ListView>
         <Button x:Name="Dodaj_czytelnika" Content="Dodaj czytelnika" HorizontalAlignment="Left" Margin="82,340,0,0" VerticalAlignment="Top" Height="45" Width="98" Click="Dodaj_czytelnika_Click"/>
-        <Button x:Name="Wypozycz" Content="Wypozycz" HorizontalAlignment="Left" Margin="295,132,0,0" VerticalAlignment="Top" Height="42" Width="105" Click="Wypozycz_Click"/>
-        <Button x:Name="Oddaj" Content="Oddaj" HorizontalAlignment="Left" Margin="295,0,0,0" VerticalAlignment="Center" Height="45" Width="105" Click="Oddaj_Click"/>
+        <Button x:Name="Wypozycz" Content="Wypozycz" HorizontalAlignment="Left" Margin="295,148,0,0" VerticalAlignment="Top" Height="42" Width="105" Click="Wypozycz_Click"/>
+        <Button x:Name="Oddaj" Content="Oddaj" HorizontalAlignment="Left" Margin="300,249,0,0" VerticalAlignment="Top" Height="45" Width="104" Click="Oddaj_Click"/>
         <Button x:Name="Dodaj_ksiazke" Content="Dodaj ksiazke" HorizontalAlignment="Left" Margin="552,340,0,0" VerticalAlignment="Top" Height="45" Width="114" Click="Dodaj_ksiazke_Click"/>
-        <TextBox HorizontalAlignment="Left" Margin="276,54,0,0" Text="W celu wypozyczenia lub oddania prosze wybrac item z listview z ksiazkami" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="57"/>
+        <TextBox HorizontalAlignment="Left" Margin="276,57,0,0" Text="W celu wypozyczenia prosze wybrac czytelnika oraz ksiazke, ktora nie jest wypozyczona przez innego czytelnika" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" Height="86"/>
+        <TextBox HorizontalAlignment="Left" Margin="280,201,0,0" Text="W celu oddania prosze wybrac oddawana ksiazke" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="43"/>
     </Grid>
 </Window>

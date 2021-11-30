@@ -24,5 +24,3 @@ C:\Users\PC\source\repos\cw7\cw7\obj\Debug\net5.0-windows\cw7.pdb
 C:\Users\PC\source\repos\cw7\cw7\obj\Debug\net5.0-windows\cw7.genruntimeconfig.cache
 C:\Users\PC\source\repos\cw7\cw7\obj\Debug\net5.0-windows\Window2.g.cs
 C:\Users\PC\source\repos\cw7\cw7\obj\Debug\net5.0-windows\Window2.baml
-C:\Users\PC\source\repos\cw7\cw7\obj\Debug\net5.0-windows\Window3.g.cs
-C:\Users\PC\source\repos\cw7\cw7\obj\Debug\net5.0-windows\Window3.baml
